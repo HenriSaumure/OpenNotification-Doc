@@ -1,3 +1,34 @@
-site_name: My Docs
+site_name: OpenNotification Documentation
+site_url: https://henrisaumure.github.io/OpenNotification-Doc/
+repo_url: https://github.com/HenriSaumure/OpenNotification-Doc
+repo_name: HenriSaumure/OpenNotification-Doc
+
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
