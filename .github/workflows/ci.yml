@@ -27,3 +27,11 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
+      - name: Ensure CNAME file exists
+        run: |
+          if [ ! -f site/CNAME ]; then
+            echo "doc.opennotification.org" > site/CNAME
+            git add site/CNAME
+            git commit -m "Add CNAME file" || true
+            git push origin gh-pages || true
+          fi

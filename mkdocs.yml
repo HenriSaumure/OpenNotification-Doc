@@ -1,7 +1,7 @@
 site_name: OpenNotification Documentation
-site_url: https://henrisaumure.github.io/OpenNotification-Doc/
-repo_url: https://github.com/HenriSaumure/OpenNotification-Doc
-repo_name: HenriSaumure/OpenNotification-Doc
+site_url: https://doc.opennotification.org/
+repo_url: https://github.com/HenriSaumure/OpenNotification-Client
+repo_name: HenriSaumure/OpenNotification-Client
 
 theme:
   name: material
